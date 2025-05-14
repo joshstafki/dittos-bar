@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ditto's Bar, St. Michael, MN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">DITTO'S BAR</a>
+                <span class="historic-badge">Est. 1878</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="page-hero">
+        <div class="page-hero-image-container" style="background-image: url('placeholder-images/contact-hero.jpg');">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <h1>GET IN TOUCH</h1>
+            <p>We'd love to hear from you. Stop by or give us a call!</p>
+        </div>
+    </section>
+
+    <section class="contact-details-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <p><i class="fas fa-map-marker-alt contact-icon"></i> <strong>Ditto's Bar</strong></p>
+                    <p>23 Central Ave W<br>Saint Michael, MN 55376</p>
+
+                    <h2>Call Us</h2>
+                    <p><i class="fas fa-phone-alt contact-icon"></i> <a href="tel:7634972600">(763) 497-2600</a></p>
+
+                    <h2>Hours of Operation</h2>
+                    <p><i class="fas fa-clock contact-icon"></i> <strong>Open Daily:</strong><br>10:00 AM – 2:00 AM</p>
+
+                    <h2>Follow Us</h2>
+                    <div class="social-links contact-page-social">
+                        <a href="#" aria-label="Ditto's Bar on Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Ditto's Bar on Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                </div>
+                <div class="contact-map">
+                    <h2>Find Us Here</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.350613649142!2d-93.66799868445108!3d45.20901097909905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2e60a88597e9f%3A0xb48f8a56f3f50798!2sDitto's%20Bar!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Map of Ditto's Bar Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYearContact"></span> Ditto's Bar. All Rights Reserved.</p>
+            <p>23 Central Ave W, Saint Michael, MN 55376 | <a href="tel:7634972600">(763) 497-2600</a></p>
+            <p>Open Daily: 10:00 AM - 2:00 AM</p>
+            <div class="social-links">
+                <a href="#" aria-label="Ditto's Bar on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Ditto's Bar on Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearContact').textContent = new Date().getFullYear();
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNavLinks = document.querySelector('.mobile-nav-links');
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavLinks.classList.toggle('active');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-times');
+        });
+    </script></body>
+</html>
