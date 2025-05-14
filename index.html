@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditto's Bar - St. Michael, MN | Your Local Original</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">DITTO'S BAR</a>
+                <span class="historic-badge">Est. 1878</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="placeholder-images/hero-bg.jpg" alt="Atmosphere at Ditto's Bar" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>GOOD TIMES. GREAT COMPANY.</h1>
+            <p>St. Michael's historic local hangout for drinks, games, music & more.</p>
+            <a href="menu.html" class="cta-button">View Our Menu</a>
+            <a href="events.html" class="cta-button secondary">See Events</a>
+        </div>
+    </section>
+
+    <section class="intro-section section-padding">
+        <div class="container">
+            <h2>WELCOME TO DITTO'S</h2>
+            <p class="section-subtitle">Located in the first brick building ever built in St. Michael (1878!), Ditto's Bar has been serving up good times for generations. We're your go-to spot for a cold beer, classic cocktails, bar games, lively karaoke nights, and live music. Come on in, grab a drink, and become part of the Ditto's family!</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-dice feature-icon"></i>
+                    <h3>Pool & Bar Games</h3>
+                    <p>Challenge your friends to a game!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-microphone-alt feature-icon"></i>
+                    <h3>Karaoke Nights</h3>
+                    <p>Unleash your inner rockstar.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-guitar feature-icon"></i>
+                    <h3>Live Music</h3>
+                    <p>Catch local bands and artists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events-preview section-padding textured-bg">
+        <div class="container">
+            <h2>UPCOMING AT DITTO'S</h2>
+            <div class="event-card-container">
+                <div class="event-card">
+                    <div class="event-card-graphic event-meat-raffle"></div> <h4>Meat Raffle!</h4>
+                    <p><strong>When:</strong> Every Saturday, 2:00 PM</p>
+                    <p>Your chance to win big! Great selections every week.</p>
+                    <a href="events.html#meat-raffle" class="learn-more-link">More Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="event-card">
+                     <div class="event-card-graphic event-karaoke"></div>
+                    <h4>Friday Night Karaoke</h4>
+                    <p><strong>When:</strong> Every Friday, 9:00 PM</p>
+                    <p>Grab the mic and sing your heart out. All genres welcome!</p>
+                    <a href="events.html#karaoke" class="learn-more-link">More Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="text-center">
+                 <a href="events.html" class="cta-button">Full Events Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="historic-highlight section-padding">
+        <div class="container">
+            <div class="historic-content">
+                <div class="historic-text">
+                    <h2>A ST. MICHAEL LANDMARK</h2>
+                    <p>Standing proud since 1878, our building isn't just old, it's St. Michael's FIRST brick building. We honor that history with every pour and every song. Step inside and feel the stories of generations past while making new memories.</p>
+                    <a href="about.html" class="cta-button secondary">Our Story</a>
+                </div>
+                <div class="historic-image">
+                    <img src="placeholder-images/historic-building.jpg" alt="Historic Ditto's Bar Building">
+                     <div class="image-overlay-text">BUILT 1878</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Ditto's Bar. All Rights Reserved.</p>
+            <p>23 Central Ave W, Saint Michael, MN 55376 | <a href="tel:7634972600">(763) 497-2600</a></p>
+            <p>Open Daily: 10:00 AM - 2:00 AM</p>
+            <div class="social-links">
+                <a href="#" aria-label="Ditto's Bar on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Ditto's Bar on Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Basic mobile nav toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNavLinks = document.querySelector('.mobile-nav-links');
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavLinks.classList.toggle('active');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
