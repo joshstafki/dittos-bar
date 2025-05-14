@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Ditto's Bar, St. Michael, MN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">DITTO'S BAR</a>
+                <span class="historic-badge">Est. 1878</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="page-hero">
+        <div class="page-hero-image-container" style="background-image: url('placeholder-images/events-hero.jpg');">
+             <div class="hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <h1>WHAT'S HAPPENING</h1>
+            <p>There's always something going on at Ditto's!</p>
+        </div>
+    </section>
+
+    <section class="events-list-section section-padding">
+        <div class="container">
+            <p class="section-subtitle text-center">From weekly traditions to special occasions, join us for a good time. Check back often or follow us on social media for the latest updates!</p>
+
+            <div class="event-category" id="karaoke">
+                <h2><i class="fas fa-microphone-alt event-icon"></i> Weekly Karaoke Night</h2>
+                <div class="event-highlight-card">
+                    <img src="placeholder-images/karaoke-event.jpg" alt="Karaoke Night at Ditto's">
+                    <div class="event-highlight-details">
+                        <h3>Every Friday Night!</h3>
+                        <p><strong>Time:</strong> 9:00 PM - Close</p>
+                        <p>Warm up those vocal cords! It's your time to shine on the Ditto's stage. All singers welcome, from shower superstars to seasoned performers. Huge song selection!</p>
+                        <p><em>No cover charge. Just bring your enthusiasm!</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-category" id="meat-raffle">
+                <h2><i class="fas fa-ticket-alt event-icon"></i> Saturday Meat Raffles</h2>
+                 <div class="event-highlight-card reverse">
+                    <img src="placeholder-images/meat-raffle-event.jpg" alt="Meat Raffle at Ditto's">
+                    <div class="event-highlight-details">
+                        <h3>Every Saturday Afternoon!</h3>
+                        <p><strong>Time:</strong> Starts at 2:00 PM</p>
+                        <p>Feeling lucky? Join us for our popular Saturday meat raffles. High-quality cuts up for grabs every week. It's a St. Michael tradition!</p>
+                        <p><em>Get here early to get your tickets!</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-category" id="live-music">
+                <h2><i class="fas fa-guitar event-icon"></i> Live Music & Entertainment</h2>
+                <div class="event-highlight-card">
+                    <img src="placeholder-images/live-music-event.jpg" alt="Live Music at Ditto's">
+                    <div class="event-highlight-details">
+                        <h3>Select Saturday Nights & Special Occasions</h3>
+                        <p>We love to showcase local talent! Keep an eye on our schedule for upcoming live bands, acoustic sets, and other special entertainment.</p>
+                        <p><em>Details for specific artists and dates will be posted here and on our social media.</em></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="event-category" id="sports">
+                <h2><i class="fas fa-tv event-icon"></i> Watch The Game Here!</h2>
+                <p>With multiple screens, Ditto's is a great place to catch your favorite Minnesota sports teams and major sporting events. Enjoy the game with cold drinks and good company!</p>
+            </div>
+
+            <div class="event-category special-events textured-bg section-padding">
+                <h2><i class="fas fa-star event-icon"></i> Special Community Events</h2>
+                <p class="text-center">Ditto's is proud to host and support various community events throughout the year, like the annual <strong>Chad Smith Ride for Life Bike Run</strong> and other local fundraisers and gatherings. We believe in giving back to the St. Michael community that supports us!</p>
+                <p class="text-center"><em>Stay tuned for announcements on upcoming special events!</em></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYearEvents"></span> Ditto's Bar. All Rights Reserved.</p>
+            <p>23 Central Ave W, Saint Michael, MN 55376 | <a href="tel:7634972600">(763) 497-2600</a></p>
+            <p>Open Daily: 10:00 AM - 2:00 AM</p>
+            <div class="social-links">
+                <a href="#" aria-label="Ditto's Bar on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Ditto's Bar on Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearEvents').textContent = new Date().getFullYear();
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNavLinks = document.querySelector('.mobile-nav-links');
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavLinks.classList.toggle('active');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileNavToggle.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
